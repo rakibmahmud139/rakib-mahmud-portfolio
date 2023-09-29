@@ -1,7 +1,9 @@
 import carToyHouse from '../assets/portfolio/car-toy-house.png';
 import koreanChef from '../assets/portfolio/korean-chef.png';
 import sportsAcademy from '../assets/portfolio/sports-academy.png';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 const Portfolio = () => {
@@ -36,10 +38,11 @@ const Portfolio = () => {
     ]
 
     return (
-        <div className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
+        <div name="portfolio" className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-                <div className='pb-8 text-center'>
-                    <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
+                <div data-aos="fade-down" data-aos-duration="3000"
+                    className='pb-8 text-center'>
+                    <p className='uppercase text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
                     <p className='py-6'>Check out my some work right here</p>
                 </div>
 
@@ -47,8 +50,9 @@ const Portfolio = () => {
                     {
                         portfolio.map(({ id, src, link, code }) => (
 
-                            <div key={id} className='shadow-lg shadow-gray-600 rounded-lg pt-1'>
-                                <img src={src} alt="" className='w-72 h-64 rounded-md duration-200 hover:scale-105' />
+                            <div key={id} data-aos="fade-up" data-aos-duration="3000"
+                                className='shadow-lg shadow-gray-600 rounded-lg pt-1'>
+                                <img src={src} alt="" className='w-96 p-4 h-64 rounded-lg duration-500 hover:scale-110' />
                                 <div>
                                     <button onClick={() => handleDemo(link)} className='w-1/2 px-6 py-3 duration-200 hover:scale-105'>Demo</button>
 
