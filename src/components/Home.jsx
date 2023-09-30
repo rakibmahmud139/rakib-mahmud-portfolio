@@ -30,6 +30,10 @@ const Home = () => {
                                 <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
                             </span>
                         </Link>
+
+                        <a href='/Rakib-Mahmud-Resume.pdf' download={true} target='_blank' rel="noreferrer">
+                            <button className='text-white md:hidden border-2 border-cyan-500 w-36 px-4 py-3 mt-6 md:my-2 rounded-md cursor-pointer'>Download CV</button>
+                        </a>
                     </div>
                 </div>
 
