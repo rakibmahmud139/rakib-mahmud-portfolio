@@ -26,6 +26,7 @@ const Footer = () => {
         },
     ]
 
+
     const icons = [
         {
             id: 1,
@@ -43,16 +44,16 @@ const Footer = () => {
                     <FaFacebook size={30} />
                 </>
             ),
-            href: 'https://github.com/rakibmahmud139',
+            href: 'https://www.facebook.com/ishan.mahmud.9849/',
         },
         {
-            id: 2,
+            id: 3,
             child: (
                 <>
                     <FaInstagram size={30} />
                 </>
             ),
-            href: 'https://github.com/rakibmahmud139',
+            href: 'https://www.instagram.com/rakib_mahmud_2/',
         },
     ]
 
@@ -60,13 +61,13 @@ const Footer = () => {
         <div className="w-full h-64 bg-gradient-to-b from-cyan-600 to-blue-500">
             <div>
                 <div>
-                    <ul className=' md:flex justify-center pt-10'>
+                    <ul className='flex justify-center  md:px-0 pt-10'>
 
                         {
                             links.map(({ id, link }) => (
                                 <li key={id} className='px-4 cursor-pointer capitalize font-medium  hover:scale-105 duration-200 text-teal-950'
                                 >
-                                    <Link to={link} smooth duration={1000}>{link}</Link>
+                                    <Link to={link} smooth duration={2000}>{link}</Link>
                                 </li>
                             ))
                         }
@@ -75,7 +76,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <ul className="md:flex justify-center pt-10 gap-8">
+                    <ul className="flex justify-center pt-10 gap-8">
 
                         {
                             icons.map(({ id, child, href }) => (
@@ -96,6 +97,7 @@ const Footer = () => {
 
                     </ul>
                 </div>
+                <p className="text-center mt-10  text-teal-950">© Md Rakib Mahmud. All rights reserved.</p>
             </div>
         </div>
     );

@@ -3,6 +3,9 @@ import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
 import react from '../assets/react.png';
 import tailwind from '../assets/tailwind.png';
+import node from '../assets/node-js.png';
+import mongodb from '../assets/mongodb.png';
+import express from '../assets/express.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -42,10 +45,28 @@ const Skills = () => {
             title: 'TAILWIND',
             style: 'shadow-sky-400'
         },
+        {
+            id: 6,
+            src: node,
+            title: 'NODE.JS',
+            style: 'shadow-green-400'
+        },
+        {
+            id: 7,
+            src: mongodb,
+            title: 'MONGODB',
+            style: 'shadow-green-600'
+        },
+        {
+            id: 8,
+            src: express,
+            title: 'EXPRESS',
+            style: 'shadow-gray-400'
+        },
     ]
 
     return (
-        <div name="skills" className='bg-gradient-to-b from-gray-800 to-black w-full h-screen'>
+        <div name="skills" className='pt-16 md:mt-0 bg-gradient-to-b from-gray-800 to-black w-full h-screen'>
             <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
                 <div data-aos="fade-down" data-aos-duration="3000" className='text-center'>
                     <p className='uppercase text-4xl font-bold border-b-4 border-gray-500 p-2 inline '>Skills</p>

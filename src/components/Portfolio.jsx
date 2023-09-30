@@ -21,19 +21,22 @@ const Portfolio = () => {
             id: 1,
             src: carToyHouse,
             link: 'https://car-toy-house-assignment.web.app/',
-            code: 'https://github.com/rakibmahmud139/toy-house-client'
+            code: 'https://github.com/rakibmahmud139/toy-house-client',
+            title: 'Toy House'
         },
         {
             id: 2,
             src: koreanChef,
             link: 'https://chef-recipe-hunter-clien-cc229.web.app/',
-            code: 'https://github.com/rakibmahmud139/chef-recipe-hunter-client'
+            code: 'https://github.com/rakibmahmud139/chef-recipe-hunter-client',
+            title: 'Chef Recipe Hunter'
         },
         {
             id: 3,
             src: sportsAcademy,
             link: 'https://sports-academy-e691c.web.app/',
-            code: 'https://github.com/rakibmahmud139/summer-camp-school-sports-academy'
+            code: 'https://github.com/rakibmahmud139/summer-camp-school-sports-academy',
+            title: 'Sports Academy'
         },
     ]
 
@@ -48,15 +51,16 @@ const Portfolio = () => {
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-12 md-px-0'>
                     {
-                        portfolio.map(({ id, src, link, code }) => (
+                        portfolio.map(({ id, src, link, code, title }) => (
 
                             <div key={id} data-aos="fade-up" data-aos-duration="3000"
                                 className='shadow-lg shadow-gray-600 rounded-lg pt-1'>
-                                <img src={src} alt="" className='w-96 p-4 h-64 rounded-lg duration-500 hover:scale-110' />
+                                <img src={src} alt="" className='w-96 p-4 h-64 rounded-xl duration-500 hover:scale-110' />
+                                <p className='text-xl ml-4'>{title}</p>
                                 <div>
-                                    <button onClick={() => handleDemo(link)} className='w-1/2 px-6 py-3 duration-200 hover:scale-105'>Demo</button>
+                                    <button onClick={() => handleDemo(link)} className='bg-cyan-600 mt-6 ml-6 mb-2 w-1/3 rounded-xl py-3 duration-200 hover:scale-105'>Demo</button>
 
-                                    <button onClick={() => handleCode(code)} className='w-1/2 px-6 py-3 duration-200 hover:scale-105'>Code</button>
+                                    <button onClick={() => handleCode(code)} className='border-2 border-cyan-600 rounded-xl w-1/3 ml-8 px-6 py-3 duration-200 hover:scale-105'>Code</button>
                                 </div>
                             </div>
                         ))
