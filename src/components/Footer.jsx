@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="w-full h-64 bg-gradient-to-b from-cyan-600 to-blue-500">
             <div>
                 <div>
-                    <ul className='flex justify-center  md:px-0 pt-10'>
+                    <ul className='flex justify-center flex-row md:flex-col  md:px-0 pt-10'>
 
                         {
                             links.map(({ id, link }) => (
