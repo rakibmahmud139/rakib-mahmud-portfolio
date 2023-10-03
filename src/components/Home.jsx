@@ -17,7 +17,7 @@ const Home = () => {
                     <p className='text-2xl text-cyan-400'>Hello I'm</p>
                     <div className='text-4xl md:text-6xl font-bold text-white mt-8 mb-0 md:mb-8'>
                         <TypeAnimation
-                            sequence={['Rakib Mahmud', 500, 'Web-Developer', 500,]}
+                            sequence={['Rakib Mahmud', 500, 'Front End Developer', 500,]}
                             speed={500}
                             repeat={Infinity}
                         />
