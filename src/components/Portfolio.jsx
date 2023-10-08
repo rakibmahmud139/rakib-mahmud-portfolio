@@ -27,7 +27,7 @@ const Portfolio = () => {
         {
             id: 2,
             src: koreanChef,
-            link: 'https://chef-recipe-hunter-clien-cc229.web.app/',
+            link: 'https://fancy-sprite-bbcd3d.netlify.app/',
             code: 'https://github.com/rakibmahmud139/chef-recipe-hunter-client',
             title: 'Chef Recipe Hunter'
         },
